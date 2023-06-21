@@ -1,0 +1,10 @@
+"""
+Este código elimina os pontos e traços de um CPF
+Não existe nenhuma validação dos dados ficando implicito que o operador
+irá digitar os pontos e traços existentes no referido documento.
+"""
+cpf = input("Digite um CPF: ")
+for numero in cpf:
+    if numero != "." and numero != "-": # elimina os pontose traços
+        print(numero,end="") # exibe somente os números
+print() # salta para a próxima linha no terminal
