@@ -1,0 +1,14 @@
+import datetime # importa a biblioteca datetime
+
+currentDateTime = datetime.datetime.now() # a data corrente é a data atual do sistema
+data = currentDateTime.date() # armazena na variável data a data atual
+ano = data.strftime("%Y") # extrai da variável data o ano corrente e armazena na variável ano 
+print(f"Ano atual -> {ano}") # exibe na tela o ano atual
+nome = input("Digite seu nome: ") # O usuário digita o seu nome
+idade = input("Digite sua idade: ") # O usuário digita a sua idade
+print("Seja bem vindo ", nome.upper()) # Exibe na tela o nome digitado (em letras maiúsculas)
+print("Você nasceu em", int(ano) - int(idade)) # o código faz a conversão para inteiro das variáveis ano e idade e subtrai uma da outra e exibe o ano de nascimento
+if int(idade) >= 50: 
+    print("Já está entrando na terceira idade") # se a idade for maior ou igual a 50 exibe a mensagem
+else : # do contrário...
+    print("Você está novinho") # exibe esta mensagem
