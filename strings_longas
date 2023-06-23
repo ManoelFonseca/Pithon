@@ -1,0 +1,17 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+# Isto mostra como inserir quebras no código fonte de forma
+# a que a expressão seja vista integralmente na área de digi-
+# tação. Optar pela segunda abordagem de acordo com o guia de
+# estilo do Python
+
+# Primeira abordagem
+print("Hello world. Have a nice day. Have a good " \
+       "weekend. Tomorrow will be a Saint John Bapti"\
+       "st Day")
+print()
+
+# Segunda abordagem
+print("Hello world. Have a nice day. Have a good "
+       "weekend. Tomorrow will be a Saint John Bapti"
+       "st Day")       
