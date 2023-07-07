@@ -2,13 +2,15 @@
 Este código atende aos requisitos do desafio básico de Python da plataforma DIO
 Os requisitos sâo: digitar um texto com no máximo 140 caracteres.
 Se ele tiver no máximo 140 caracteres na tela aparecerá "TWEET" do contrário aparecerá "MUTE"
+Porém ele "não passou" na plataforma da DIO.me
 """
 
 texto = input("Digite seu post - máximo de 140 caracteres: ")
-
 print(len(texto))
+
 if len(texto) > 0 and len(texto) <= 140:
-print(texto.title())
-  print("TWEET")
+    print(texto.title())
+    print("TWEET")
 else :
-  print("MUTE")
+    print("Você não digitou nenhum texto ou seu texto excedeu 140 caracteres...")
+    print("MUTE")
