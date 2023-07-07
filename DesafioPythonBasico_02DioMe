@@ -1,0 +1,15 @@
+"""
+    Este código atende aos requisitos do desafio básico de Python da plataforma DIO.me
+    Ele utiliza um dicionário contendo o mês (em numeral) e seu nome (em inglês) por extenso. O usuário digita um número válido (entre 1 e 12)
+    e o programa mostra o nome do mês em inglês com a primeira letra maiúscula.
+    Porém ele "não passou" na plataforma da DIO.me.
+"""
+mes_dic = {1:"january",2:"february",3:"march",4:"april",5:"may",
+               6:"june",7:"july",8:"august",9:"september",10:"october",
+               11:"november",12:"december"}
+mes = int(input("Digite o mês - entre 1 e 12: "))
+if mes > 0 and mes < 13 :
+    meses = mes_dic.get(mes)
+    print(meses.title())
+else :
+    print("Você digitou um valor inválido")
