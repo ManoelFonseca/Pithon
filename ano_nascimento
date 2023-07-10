@@ -1,7 +1,7 @@
 import datetime # importa a biblioteca datetime
 
 currentDateTime = datetime.datetime.now() # a data corrente é a data atual do sistema
-data = currentDateTime.date() # armazena na variável data a data atual
+data = currentDateTime.date() # armazena na variável data, a data atual
 ano = data.strftime("%Y") # extrai da variável data o ano corrente e armazena na variável ano 
 print(f"Ano atual -> {ano}") # exibe na tela o ano atual
 nome = input("Digite seu nome: ") # O usuário digita o seu nome
